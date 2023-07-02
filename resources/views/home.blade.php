@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('¡Estás conectado! (つ ◕_◕ )つ') }}
+                    {{ __('¡Estás conectado!  (つ ◕_◕ )つ') }}
                 </div>
             </div>
         </div>
