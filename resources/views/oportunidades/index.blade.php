@@ -33,8 +33,20 @@
       <td>
         <a href="{{route('oportunidades.show',$oportunidad->Id_Oportunidad)}}" class="btn btn-primary"> <i class="fas fa-eye">       </i></a>
         <a href="{{route('oportunidades.edit',$oportunidad->Id_Oportunidad)}}" class="btn btn-primary"> <i class="fas fa-pencil-alt"></i></a>
-        <a href="" class="btn btn-primary"> <i class="fa fa-trash"></i></a>
-    
+        <a href="{{route('oportunidades.destroy', $oportunidad->Id_Oportunidad)}}" class="btn btn-danger" onclick="event.preventDefault();
+            if (confirm('¿Estás seguro de que deseas eliminar esta oportunidad?')) {
+                document.getElementById('delete-form').submit();
+            }">
+    <i class="fas fa-trash-alt"></i>
+</a>
+
+<form id="delete-form"
+      action="{{ route('oportunidades.destroy', $oportunidad->Id_Oportunidad) }}"
+      method="POST"
+      style="display: none;">
+    @csrf
+    @method('DELETE')
+</form>
     </tr>
     @endforeach
   </tbody>

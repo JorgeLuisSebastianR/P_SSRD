@@ -49,12 +49,12 @@
                             <a href="{{ url('/oportunidades') }}">Contenido</a>
                         </li>
                         <li>
-                            <a href="#">Estatus</a>
+                            <a href="{{ url('/estatuoportunidades') }}">Estatus</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/Aspirantes') }}">
                         <i class="fas fa-image"></i>
                         <b>Aspirantes</b>
                     </a>

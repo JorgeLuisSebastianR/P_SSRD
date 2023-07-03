@@ -81,6 +81,13 @@ class oportunidadController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $oportunidad = oportunidadModel::where('Id_Oportunidad',$id)->firstOrFail();
+        try{
+            $oportunidad->delete();
+            return redirect()->route('oportunidades.index')->with('message','borrado');
+            
+        }catch(QueryException $e){
+            return redirect()->route('oportunidades.index')->with('message','Aaaaaa');
+        }  
     }
 }
