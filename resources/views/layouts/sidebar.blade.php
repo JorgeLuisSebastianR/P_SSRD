@@ -40,13 +40,13 @@
 
                 <!-- Elementos del usuario Organizacion  -->
                 <li>
-                    <a href="#Oportunidades" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <a href="#Oportunidades1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-image"></i>
                         <b>Oportunidades</b>
                     </a>
-                    <ul class="collapse list-unstyled" id="Oportunidades">
+                    <ul class="collapse list-unstyled" id="Oportunidades1">
                         <li>
-                            <a href="#">Contenido</a>
+                            <a href="{{ url('/oportunidades') }}">Contenido</a>
                         </li>
                         <li>
                             <a href="#">Estatus</a>

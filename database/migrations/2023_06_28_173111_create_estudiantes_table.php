@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('estudiantes', function (Blueprint $table) {
             $table->increments('Id_Estudiante');
-            $table->integer('Id_Usuario')->unsigned();
-            $table->foreign('Id_Usuario')->references('Id_Usuario')->on('usuarios'); 
+            $table->integer('id')->unsigned();
+            $table->foreign('id')->references('id')->on('users'); 
             $table->string('Nombre');
             $table->string('ApellidoPaterno');
             $table->string('ApellidoMaterno');
