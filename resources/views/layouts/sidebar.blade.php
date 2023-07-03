@@ -13,12 +13,16 @@
                         <b>Home</b>
                     </a>                    
                 </li>
+                <!-- Elementos del usuario Admin  -->
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-users"></i>
-                        <b>Crear Usuario</b>
+                        <b>Usuarios</b>
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Tipo</a>
+                        </li>
                         <li>
                             <a href="#">Estudiante</a>
                         </li>
@@ -28,21 +32,49 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#Solicitudes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-users"></i>
-                        <b>Solicitudes</b>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        <b>Solicitudes de Org.</b>
                     </a>
-                    <ul class="collapse list-unstyled" id="Solicitudes">
+                </li>
+
+                <!-- Elementos del usuario Organizacion  -->
+                <li>
+                    <a href="#Oportunidades" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-image"></i>
+                        <b>Oportunidades</b>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Oportunidades">
                         <li>
-                            <a href="#">Servicio social</a>
+                            <a href="#">Contenido</a>
                         </li>
                         <li>
-                            <a href="#">Residencias profesional</a>
+                            <a href="#">Estatus</a>
                         </li>
                     </ul>
                 </li>
-                
-                
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        <b>Aspirantes</b>
+                    </a>
+                </li>
+
+                <!-- Elementos del usuario Organizacion  -->
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        <b>Oportunidades</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        <b>Estatus solisitud</b>
+                    </a>
+                </li>
+
+
                 <li>
                     <a href="#">
                         <i class="fas fa-image"></i>
@@ -55,12 +87,12 @@
                         <b>Contact</b>
                     </a>
                 </li>
-                <li class="{{'clientes'==Request::is('clientes*')?'active': ''}}">
+                <!--<li class="{{'clientes'==Request::is('clientes*')?'active': ''}}">
                     <a href="">
                         <i class="fas fa-users"></i>
                         <b>Actualizar Info</b>
                     </a>
-                </li>
+                </li>-->
             </ul>
         </nav>
 
