@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('empresas', function (Blueprint $table) {
             $table->increments('Id_Empresa');
-            $table->integer('Id_Usuario')->unsigned();
-            $table->foreign('Id_Usuario')->references('Id_Usuario')->on('usuarios');
+            $table->integer('id')->unsigned();
+            $table->foreign('id')->references('id')->on('users');
             $table->string('Nombre');
             $table->string('Sector');
             $table->string('Ubicacion');
