@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreign('Id_Oportunidad')->references('Id_Oportunidad')->on('oportunidades');
             $table->integer('Id_Validador')->unsigned();
             $table->foreign('Id_Validador')->references('Id_Validador')->on('validadores');
-            $table->dateTime('Fecha');
-            $table->string('Estatus');
+            $table->dateTime('fechaRevicio');
+            $table->enum('Estatus', ['aceptada', 'rechazada']);
             $table->timestamps();
         });
     }

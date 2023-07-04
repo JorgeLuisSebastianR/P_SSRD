@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreign('Id_Solicitud')->references('Id_Solicitud')->on('solicitudes');
             $table->integer('Id_Empresa')->unsigned();
             $table->foreign('Id_Empresa')->references('Id_Empresa')->on('empresas');
-            $table->dateTime('Fecha');
-            $table->string('Tipo');
+            $table->dateTime('fechaRevicio');
+            $table->enum('Estatus', ['aceptada', 'rechazada']);
             $table->timestamps();
         });
     }

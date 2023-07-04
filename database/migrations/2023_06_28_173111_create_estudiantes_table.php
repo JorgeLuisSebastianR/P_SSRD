@@ -15,14 +15,14 @@ return new class extends Migration
             $table->increments('Id_Estudiante');
             $table->integer('id')->unsigned();
             $table->foreign('id')->references('id')->on('users'); 
-            $table->string('Nombre');
-            $table->string('ApellidoPaterno');
-            $table->string('ApellidoMaterno');
-            $table->string('NumeroControl');
-            $table->integer('Edad');
-            $table->string('Genero');
-            $table->string('CorreoElectronico');
-            
+            $table->string('Nombre',20);
+            $table->string('ApellidoPaterno',20);
+            $table->string('ApellidoMaterno',20);
+            $table->string('numControl',8);
+            $table->dateTime('fechaNacimiento');
+            $table->enum('Genero', ['Hombre', 'Mujer']);
+            $table->string('carrera');
+            $table->string('telefono',10);
             $table->timestamps();
         });
     }

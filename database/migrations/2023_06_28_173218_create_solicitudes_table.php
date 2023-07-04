@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreign('Id_Estudiante')->references('Id_Estudiante')->on('estudiantes');
             $table->integer('Id_OportunidadValidador')->unsigned();
             $table->foreign('Id_OportunidadValidador')->references('Id_OportunidadValidador')->on('oportunidades_validadores');
-            $table->dateTime('Fecha');
+            $table->dateTime('fechaSolicitud');
             $table->string('Semestre');
             $table->string('Habilidades');
             $table->timestamps();

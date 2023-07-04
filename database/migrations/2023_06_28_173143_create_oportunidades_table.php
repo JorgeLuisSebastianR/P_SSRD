@@ -15,11 +15,12 @@ return new class extends Migration
             $table->increments('Id_Oportunidad');
             $table->integer('Id_Empresa')->unsigned();
             $table->foreign('Id_Empresa')->references('Id_Empresa')->on('empresas');
-            $table->string('Descripcion');
-            $table->string('Requisitos');
-            $table->string('Duracion');
-            $table->string('Perfil');
-            $table->string('Tipo');
+            $table->string('nombreProyecto',100);
+            $table->string('Descripcion',200);
+            $table->string('Requisitos',200);
+            $table->enum('Tipo', ['residencia', 'servicio social']);
+            $table->dateTime('fechaInicio');
+            $table->dateTime('fechaFin');
             $table->timestamps();
         });
     }
