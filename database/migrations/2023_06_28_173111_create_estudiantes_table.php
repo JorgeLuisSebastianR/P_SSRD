@@ -13,15 +13,26 @@ return new class extends Migration
     {
         Schema::create('estudiantes', function (Blueprint $table) {
             $table->increments('Id_Estudiante');
+
             $table->integer('id')->unsigned();
             $table->foreign('id')->references('id')->on('users'); 
-            $table->string('Nombre',20);
-            $table->string('ApellidoPaterno',20);
-            $table->string('ApellidoMaterno',20);
+
+            $table->string('nombre',20);
+            $table->string('apellidoPaterno',20);
+            $table->string('apellidoMaterno',20);
             $table->string('numControl',8);
             $table->dateTime('fechaNacimiento');
-            $table->enum('Genero', ['Hombre', 'Mujer']);
-            $table->string('carrera');
+            $table->enum('genero', ['Hombre', 'Mujer']);
+            $table->enum('carrera', [
+                'Ingeniero en Animación Digital y Efectos Visuales',
+                'Ingeniería Industrial',
+                'Ingeniería en Industrias Alimentarias',
+                'Ingeniería Informática',
+                'Ingeniería Mecatrónica',
+                'Ingeniería en Sistemas Computacionales',
+                'Ingeniería en Gestión Empresarial',
+                'Licenciatura en Turismo'
+            ]);
             $table->string('telefono',10);
             $table->timestamps();
         });
