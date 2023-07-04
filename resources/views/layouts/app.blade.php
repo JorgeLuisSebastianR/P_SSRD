@@ -110,10 +110,18 @@
         </nav>
 
         <div id="app" class="wrapper">
-        @guest
-            @else
-            @include('layouts.sidebarA')
-            @endguest
+            @guest
+            <!-- Código para usuarios no autenticados -->
+        @else
+            @if (Auth::user()->tipo === 'Alumno')
+                @include('layouts.sidebarE')
+            @elseif (Auth::user()->tipo === 'Admin')
+                @include('layouts.sidebarA')
+            @elseif (Auth::user()->tipo === 'Organizacion')
+                @include('layouts.sidebarO')
+            @endif
+        @endguest
+        
 
         <div id="content">
         <main class="py-4">
