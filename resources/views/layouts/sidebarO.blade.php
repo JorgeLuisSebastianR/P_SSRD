@@ -2,7 +2,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>{{ config('app.name', 'Laravel') }}</h3>
+                <h3>Organizacion</h3>
                 <strong>PRO</strong>
             </div>
 
@@ -14,29 +14,7 @@
                     </a>                    
                 </li>
                 <!-- Elementos del usuario Admin  -->
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-users"></i>
-                        <b>Usuarios</b>
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="{{ url('/users') }}">Tipo</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/estudiantes') }}">Estudiante</a>
-                        </li>
-                        <li>
-                            <a href="#">Organizacion</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        <b>Solicitudes de Org.</b>
-                    </a>
-                </li>
+
 
                 <!-- Elementos del usuario Organizacion  -->
                 <li>
@@ -61,18 +39,6 @@
                 </li>
 
                 <!-- Elementos del usuario Organizacion  -->
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        <b>Oportunidades</b>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        <b>Estatus solisitud</b>
-                    </a>
-                </li>
 
 
                 <li>

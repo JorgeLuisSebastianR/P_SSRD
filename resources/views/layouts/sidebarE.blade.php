@@ -2,7 +2,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>{{ config('app.name', 'Laravel') }}</h3>
+                <h3>Estudiante</h3>
                 <strong>PRO</strong>
             </div>
 
@@ -13,68 +13,24 @@
                         <b>Home</b>
                     </a>                    
                 </li>
-                <!-- Elementos del usuario Admin  -->
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-users"></i>
-                        <b>Usuarios</b>
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="{{ url('/users') }}">Tipo</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/estudiantes') }}">Estudiante</a>
-                        </li>
-                        <li>
-                            <a href="#">Organizacion</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        <b>Solicitudes de Org.</b>
-                    </a>
-                </li>
+                
 
                 <!-- Elementos del usuario Organizacion  -->
-                <li>
-                    <a href="#Oportunidades1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-image"></i>
-                        <b>Oportunidades</b>
-                    </a>
-                    <ul class="collapse list-unstyled" id="Oportunidades1">
-                        <li>
-                            <a href="{{ url('/oportunidades') }}">Contenido</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/estatuoportunidades') }}">Estatus</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="{{ url('/Aspirantes') }}">
-                        <i class="fas fa-image"></i>
-                        <b>Aspirantes</b>
-                    </a>
-                </li>
-
-                <!-- Elementos del usuario Organizacion  -->
+        
                 <li>
                     <a href="#">
-                        <i class="fas fa-image"></i>
-                        <b>Oportunidades</b>
+                        <i class="fa fa-file-text-o"></i>
+                        <b>Explorar prácticas</b>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-image"></i>
+                        <i class="fas fa-bells"></i>
                         <b>Estatus solisitud</b>
                     </a>
                 </li>
 
-
+                <!-- Elementos del usuario Organizacion  -->
                 <li>
                     <a href="#">
                         <i class="fas fa-image"></i>

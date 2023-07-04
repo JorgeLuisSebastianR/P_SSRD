@@ -112,7 +112,7 @@
         <div id="app" class="wrapper">
         @guest
             @else
-            @include('layouts.sidebar')
+            @include('layouts.sidebarA')
             @endguest
 
         <div id="content">

@@ -5,6 +5,7 @@ use App\Http\Controllers\oportunidadController;
 use App\Http\Controllers\EstatusOportunidadController;
 use App\Http\Controllers\SolicitudEmpresaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\EstudianteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,4 @@ Route::resource('oportunidades',oportunidadController::class);
 Route::resource('estatuoportunidades',EstatusOportunidadController::class);
 Route::resource('Aspirantes',SolicitudEmpresaController::class);
 Route::resource('users',UserController::class);
+Route::resource('estudiantes',EstudianteController::class);
