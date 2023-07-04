@@ -21,7 +21,7 @@
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Tipo</a>
+                            <a href="{{ url('/users') }}">Tipo</a>
                         </li>
                         <li>
                             <a href="#">Estudiante</a>

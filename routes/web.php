@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\oportunidadController;
 use App\Http\Controllers\EstatusOportunidadController;
 use App\Http\Controllers\SolicitudEmpresaController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('oportunidades',oportunidadController::class);
 Route::resource('estatuoportunidades',EstatusOportunidadController::class);
 Route::resource('Aspirantes',SolicitudEmpresaController::class);
+Route::resource('users',UserController::class);
