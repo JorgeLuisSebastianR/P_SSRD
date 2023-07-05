@@ -9,12 +9,12 @@ class EstudianteModel extends Model
 {
     use HasFactory;
     protected $primaryKey = 'Id_Estudiante';
-    protected $foreingKey = 'Id_usuario';
+    protected $foreingKey = 'id';
 
     protected $table = 'estudiantes';
 
     protected $fillable = [
-        'Id_usuario',
+        'id',
         'nombre',
         'apellidoPaterno',
         'apellidoMaterno',
@@ -26,6 +26,6 @@ class EstudianteModel extends Model
     ];
 
     public function usuario(){
-        return $this->belongsTo('App\Models\UserModel', 'Id_usuario', 'Id_usuario');
+        return $this->belongsTo('App\Models\UserModel', 'id', 'id');
     }
 }
