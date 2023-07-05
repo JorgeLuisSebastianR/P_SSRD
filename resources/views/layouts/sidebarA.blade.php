@@ -32,7 +32,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/solicitudOrgs') }}">
                         <i class="fas fa-image"></i>
                         <b>Solicitudes de Org.</b>
                     </a>
@@ -42,13 +42,13 @@
 
 
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/ayudas/indexAyudaA') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/contactos') }}">
                         <i class="fas fa-paper-plane"></i>
                         <b>Contact</b>
                     </a>

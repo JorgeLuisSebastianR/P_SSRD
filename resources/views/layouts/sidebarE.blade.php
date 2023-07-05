@@ -32,13 +32,13 @@
 
                 <!-- Elementos del usuario Organizacion  -->
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/ayudas') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/contactos') }}">
                         <i class="fas fa-paper-plane"></i>
                         <b>Contact</b>
                     </a>

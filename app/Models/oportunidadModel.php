@@ -12,12 +12,16 @@ class oportunidadModel extends Model
     protected $foreingKey = 'Id_Empresa';
     protected $table = 'oportunidades';
     protected $fillable = [
+        'nombreProyecto',
         'Descripcion',
         'Requisitos',
-        'Duracion',
-        'Perfil',
-        'Tipo'
+        'Tipo',
+        'fechaInicio',
+        'fechaFin'
     ];
-
+    public function validador()
+    {
+        return $this->hasOne(UserModel::class, 'id', 'Id_Validador');
+    }
 
 }

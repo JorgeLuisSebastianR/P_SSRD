@@ -5,14 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class EstatusOportunidadModel extends Model
+class solicitudOrgModel extends Model
 {
     use HasFactory;
     protected $primaryKey = 'Id_OportunidadValidador';
-    protected $foreingKeyS = 'Id_Oportunidad';
-    protected $foreingKeyE = 'Id_Validador';
+    protected $foreingKey = 'Id_Oportunidad';
+    protected $foreingKeyV = 'Id_Validador';
     protected $table = 'oportunidades_validadores';
     protected $fillable = [
+        'Id_Oportunidad',
+        'Id_Validador',
         'fechaRevicio',
         'Estatus'
     ];
