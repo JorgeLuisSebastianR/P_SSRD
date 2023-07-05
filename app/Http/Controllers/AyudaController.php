@@ -61,4 +61,12 @@ class AyudaController extends Controller
     {
         //
     }
+
+    public function AyudaE(){
+        return view('ayudas.indexAyudaE');
+    }
+
+    public function AyudaO(){
+        return view('ayudas.indexAyudaO');
+    }
 }

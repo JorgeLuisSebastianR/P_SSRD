@@ -39,3 +39,9 @@ Route::resource('solicitudOrgs',solicitudOrgController::class);
 Route::get('/ayudas/indexAyudaA', [App\Http\Controllers\AyudaController::class, 'index'])->name('ayudas');
 Route::get('/contactos/indexcontactoA', [App\Http\Controllers\ContactoController::class, 'index'])->name('contactos');
 
+
+
+
+
+Route::get('/ayudas/indexAyudaE', [App\Http\Controllers\AyudaController::class, 'AyudaE'])->name('AyudaE');
+Route::get('/ayudas/indexAyudaO', [App\Http\Controllers\AyudaController::class, 'AyudaO'])->name('AyudaO');
