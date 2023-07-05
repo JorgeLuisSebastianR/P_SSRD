@@ -42,13 +42,13 @@
 
 
                 <li>
-                    <a href="{{ url('/ayudas') }}">
+                    <a href="{{ url('/ayudas/indexAyudaA') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/contactos') }}">
+                    <a href="{{ url('/contactos/indexcontactoA') }}">
                         <i class="fas fa-paper-plane"></i>
                         <b>Contact</b>
                     </a>
