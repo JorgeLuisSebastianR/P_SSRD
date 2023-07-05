@@ -8,6 +8,11 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+
+use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Foundation\Auth\RegistersUsers;
+
 class UserController extends Controller
 {
     /**
@@ -28,7 +33,6 @@ class UserController extends Controller
     {
         return view('users.create');
     }
-
     public function crearActualizar(Request $request, $user)
     {
         $user->name = $request->name;
