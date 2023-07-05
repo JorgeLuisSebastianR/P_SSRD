@@ -6,12 +6,9 @@ use App\Http\Controllers\EstatusOportunidadController;
 use App\Http\Controllers\SolicitudEmpresaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\EstudianteController;
-<<<<<<< HEAD
 use App\Http\Controllers\EmpresaController;
 
-=======
 use App\Http\Controllers\solicitudOrgController;
->>>>>>> 9f51ccc0bb11e3ee010cb5a7eb43ea4db1fca56e
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +32,7 @@ Route::resource('estatuoportunidades',EstatusOportunidadController::class);
 Route::resource('Aspirantes',SolicitudEmpresaController::class);
 Route::resource('users',UserController::class);
 Route::resource('estudiantes',EstudianteController::class);
-<<<<<<< HEAD
 Route::resource('empresas', EmpresaController::class);
 
-=======
 Route::resource('solicitudOrgs',solicitudOrgController::class);
->>>>>>> 9f51ccc0bb11e3ee010cb5a7eb43ea4db1fca56e
+
