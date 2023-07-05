@@ -19,6 +19,9 @@ class oportunidadModel extends Model
         'fechaInicio',
         'fechaFin'
     ];
-
+    public function validador()
+    {
+        return $this->hasOne(UserModel::class, 'id', 'Id_Validador');
+    }
 
 }

@@ -31,4 +31,5 @@ class UserModel extends Authenticatable
     {
         $this->attributes['password'] = Hash::make($password);
     }
+    
 }

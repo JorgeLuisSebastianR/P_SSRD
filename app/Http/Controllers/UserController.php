@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\UserModel;
+use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
@@ -16,10 +18,12 @@ class UserController extends Controller
         $users = UserModel::select('*')->get();
         return view('users.index', compact('users'));
     }
-
+    
+    
     /**
      * Show the form for creating a new resource.
      */
+    
     public function create()
     {
         return view('users.create');

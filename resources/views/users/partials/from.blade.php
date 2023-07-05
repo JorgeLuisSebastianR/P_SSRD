@@ -21,3 +21,15 @@
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col-12">
+        <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <select class="form-control" name="tipo" id="tipo" required>
+                <option value="Alumno" {{ (isset($tipo) && $tipo == 'Alumno') ? 'selected' : '' }}>Alumno</option>
+                <option value="Admin" {{ (isset($tipo) && $tipo == 'Admin') ? 'selected' : '' }}>Admin</option>
+                <option value="Organizacion" {{ (isset($tipo) && $tipo == 'Organizacion') ? 'selected' : '' }}>Organizacion</option>
+            </select>
+        </div>
+    </div>
+</div>
