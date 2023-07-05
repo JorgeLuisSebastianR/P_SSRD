@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <div class="card mt-3">
     <div class="card-header d-inline-flex">
         <h1>Alumnos</h1>
@@ -31,7 +32,7 @@
       <td>{{$estudiante->carrera}}</td>
       <td>{{$estudiante->telefono}}</td>
       <td>
-        <a href="{{--route('oportunidades.show',$oportunidad->Id_Oportunidad)--}}" class="btn btn-primary"> <i class="fas fa-eye">       </i></a>
+        <a href="{{ route('estudiantes.show', $estudiante->Id_Estudiante)}}" class="btn btn-primary"> <i class="fas fa-eye">       </i></a>
         <a href="{{--route('oportunidades.edit',$oportunidad->Id_Oportunidad)--}}" class="btn btn-primary"> <i class="fas fa-pencil-alt"></i></a>
         <a href="{{--route('oportunidades.destroy', $oportunidad->Id_Oportunidad)--}}" class="btn btn-danger" onclick="event.preventDefault();
             if (confirm('¿Estás seguro de que deseas eliminar esta oportunidad?')) {
@@ -49,4 +50,5 @@
         @endforeach 
   </tbody>
 </table>
+
 @endsection

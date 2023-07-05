@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\EstudianteModel;
 
+use App\Models\User;
+
 class EstudianteController extends Controller
 {
     /**
@@ -38,7 +40,9 @@ class EstudianteController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $estudiantes = EstudianteModel::where('Id_Estudiante',$id)->firstOrFail();
+        return view('estudiantes.show', compact('estudiantes'));
+
     }
 
     /**
