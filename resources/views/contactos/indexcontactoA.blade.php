@@ -2,7 +2,7 @@
 @section('content')
 
 <div>
-    <h2>Soporte! Admin</h2>
+    <h2>Contacto! Admin</h2>
 </div>
 
 @endsection

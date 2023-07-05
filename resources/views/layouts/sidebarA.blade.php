@@ -2,7 +2,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Alministrador</h3>
+                <h3>Administrador</h3>
                 <strong>PRO</strong>
             </div>
 
@@ -37,7 +37,7 @@
                         <b>Solicitudes de Org.</b>
                     </a>
                 </li>
-
+ 
                 <!-- Elementos del usuario Admin  -->
 
 
@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/contactos') }}">
+                    <a href="{{ url('/contactos/indexcontactoA') }}">
                         <i class="fas fa-paper-plane"></i>
                         <b>Contact</b>
                     </a>
