@@ -11,7 +11,7 @@ class AyudaController extends Controller
      */
     public function index()
     {
-        
+        return view('ayudas.indexAyudaA');
     }
 
     /**

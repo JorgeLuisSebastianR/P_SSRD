@@ -27,7 +27,7 @@
                             <a href="{{ url('/estudiantes') }}">Estudiante</a>
                         </li>
                         <li>
-                            <a href="#">Organizacion</a>
+                            <a href="{{ url('/empresas') }}">Organizacion</a>
                         </li>
                     </ul>
                 </li>
@@ -42,7 +42,7 @@
 
 
                 <li>
-                    <a href="{{ url('/ayudas/indexAyudaA') }}">
+                    <a href="{{ url('/ayudas.indexAyudaA') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>

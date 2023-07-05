@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">SAF</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -39,8 +39,9 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+                        <h1 class="mx-auto my-0 text-uppercase">Social Air Finder</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Encuentra tu espacio y desarrolla tu potencial.</h2>
+                        <a class="btn btn-primary" href="#about">Get Started</a>
                         <a class="btn btn-primary" href="#about">Get Started</a>
                     </div>
                 </div>
@@ -53,7 +54,8 @@
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
                         <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+                            Instituto Tecnológico Superior de Teziutlán
+La Juventud de hoy, Tecnología del mañana
                             <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
                             The theme is open source, and you can use it for any purpose, personal or commercial.
                         </p>
@@ -82,8 +84,8 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <h4 class="text-white">Misión</h4>
+                                    <p class="mb-0 text-white-50">El instituto Tecnológico Superior de Teziutlán tienen como Misión, formar Profesionales que se constituyan en agentes de cambio y promuevan el desarrollo integral de la sociedad, mediante la implementación de procesos académicos de calidad.</p>
                                 </div>
                             </div>
                         </div>
@@ -96,8 +98,8 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
+                                    <h4 class="text-white">Visión</h4>
+                                    <p class="mb-0 text-white-50">Llegar a ser la Institución de Educación Superior Tecnológica más reconocida en el Estado de Puebla, que ofrezca un proceso de Enseñanza – Aprendizaje certificado, comprometido con la excelencia académica y la formación integral del Alumno, contribuyendo al desarrollo sustentable, económico, político y social de nuestro Estado.</p>
                                 </div>
                             </div>
                         </div>
