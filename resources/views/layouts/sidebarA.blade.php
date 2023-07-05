@@ -32,7 +32,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/solicitudOrgs') }}">
                         <i class="fas fa-image"></i>
                         <b>Solicitudes de Org.</b>
                     </a>
