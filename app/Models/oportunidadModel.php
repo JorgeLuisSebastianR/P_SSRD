@@ -12,11 +12,12 @@ class oportunidadModel extends Model
     protected $foreingKey = 'Id_Empresa';
     protected $table = 'oportunidades';
     protected $fillable = [
+        'nombreProyecto',
         'Descripcion',
         'Requisitos',
-        'Duracion',
-        'Perfil',
-        'Tipo'
+        'Tipo',
+        'fechaInicio',
+        'fechaFin'
     ];
 
 

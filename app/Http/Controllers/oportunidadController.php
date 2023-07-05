@@ -36,12 +36,13 @@ class oportunidadController extends Controller
     }
 
     public function crearActualizar(Request $request, $oportunidad){
-        $oportunidad->Id_Empresa=      $request->Id_Empresa;
-        $oportunidad->Descripcion=     $request->Descripcion;
-        $oportunidad->Requisitos=      $request->Requisitos;
-        $oportunidad->Duracion=        $request->Duracion;
-        $oportunidad->Perfil=          $request->Perfil;
-        $oportunidad->Tipo=            $request->Tipo;
+        $oportunidad->Id_Empresa=           $request->Id_Empresa;
+        $oportunidad->nombreProyecto=       $request->nombreProyecto; 
+        $oportunidad->Descripcion=          $request->Descripcion;
+        $oportunidad->Requisitos=           $request->Requisitos;
+        $oportunidad->Tipo=                 $request->Tipo;
+        $oportunidad->fechaInicio=          $request->fechaInicio;
+        $oportunidad->fechaFin=             $request->fechaFin;
         $oportunidad->save();
         return $oportunidad;
     }
