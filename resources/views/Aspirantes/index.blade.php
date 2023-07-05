@@ -13,6 +13,7 @@
   <thead>
     <tr>
       <th scope="col">#ID</th>
+      <th scope="col">Nombre de proyecto</th>
       <th scope="col">Nombre de Alumno</th>
       <th scope="col">habilidades</th>
       <th scope="col">semestre</th>

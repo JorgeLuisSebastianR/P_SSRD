@@ -8,14 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class EstatusOportunidadModel extends Model
 {
     use HasFactory;
-    protected $primaryKey = 'Id_SolicitudEmpresa';
-    protected $foreingKeyS = 'Id_Solicitud';
-    protected $foreingKeyE = 'Id_Empresa';
-    protected $table = 'solicitudes_empresas';
+    protected $primaryKey = 'Id_OportunidadValidador';
+    protected $foreingKeyS = 'Id_Oportunidad';
+    protected $foreingKeyE = 'Id_Validador';
+    protected $table = 'oportunidades_validadores';
     protected $fillable = [
-        'Id_Solicitud',
-        'Id_Empresa',
-        'Fecha',
-        'Tipo'
+        'fechaRevicio',
+        'Estatus'
     ];
 }
