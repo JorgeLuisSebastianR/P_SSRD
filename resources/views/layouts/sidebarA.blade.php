@@ -42,7 +42,7 @@
 
 
                 <li>
-                    <a href="{{ url('/ayudas') }}">
+                    <a href="{{ url('/ayudas/indexAyudaA') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>
