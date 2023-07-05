@@ -36,3 +36,4 @@ Route::resource('empresas', EmpresaController::class);
 
 Route::resource('solicitudOrgs',solicitudOrgController::class);
 
+Route::get('/ayudas/indexAyudaA', [App\Http\Controllers\AyudaController::class, 'index'])->name('ayudas');

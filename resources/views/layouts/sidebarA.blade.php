@@ -2,7 +2,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Alministrador</h3>
+                <h3>Administrador</h3>
                 <strong>PRO</strong>
             </div>
 
@@ -42,7 +42,7 @@
 
 
                 <li>
-                    <a href="{{ url('/ayudas.indexAyudaA') }}">
+                    <a href="{{ url('/ayudas') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>
