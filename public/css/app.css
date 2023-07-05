@@ -1,0 +1,70 @@
+/* Estilos del nav */
+.navbar {
+    background-color: #2C3564;
+}
+
+.navbar-brand {
+    color: bisque;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+/* Estilos del body */
+body {
+    background-color: #85a29e;
+}
+
+/* Estilos de los textos */
+h1, h2, h3, h4, h5, h6 {
+    color: #577381;
+}
+
+p, a, label {
+    color: #8B93A4;
+}
+
+/* Animación de fondo en las esquinas */
+body::before, body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    background-color: #F3F6F7;
+    z-index: -1;
+    transition: transform 2s ease-in-out;
+}
+
+body::before {
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: animateBefore 6s linear infinite;
+}
+
+body::after {
+    right: 0;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    animation: animateAfter 6s linear infinite;
+}
+
+@keyframes animateBefore {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes animateAfter {
+    0% {
+        transform: translate(50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(50%, -50%) rotate(360deg);
+    }
+}
