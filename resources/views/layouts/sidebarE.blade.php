@@ -32,7 +32,7 @@
 
                 <!-- Elementos del usuario Organizacion  -->
                 <li>
-                    <a href="{{ url('/ayudas') }}">
+                    <a href="{{ url('/ayudas/indexAyudaE') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>

@@ -9,7 +9,7 @@ class solicitudOrgModel extends Model
 {
     use HasFactory;
     protected $primaryKey = 'Id_OportunidadValidador';
-    protected $foreingKey = 'Id_Oportunidad';
+    protected $foreingKeyO = 'Id_Oportunidad';
     protected $foreingKeyV = 'Id_Validador';
     protected $table = 'oportunidades_validadores';
     protected $fillable = [

@@ -3,6 +3,8 @@
 
 <head>
 
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -51,11 +53,11 @@
 
 </head>
 
-<body>
+<body style="background-color: #85a29e;">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md" style="background-color: #2C3564;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/') }}" style="color:bisque;">
                     {{ config('app.name', '') }}
                 </a> 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,7 +66,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" ;">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
 
@@ -76,7 +78,11 @@
                         @guest
                         @if (Route::has('login'))
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar sesion') }}</a>
+=======
+                            <a class="nav-link" href="{{ route('login') }}" >{{ __('') }}</a>
+>>>>>>> babc9e8b1a1c67e3dec16d36d76aefa360816714
                         </li>
                         @endif
 
@@ -88,13 +94,13 @@
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: white;">
                                 {{ __(' Hola ') }}{{ Auth::user()->name }}
                             </a>
 
                             <div aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();" style="color: white;">
                                     {{ __('Cerrar sesion') }}
                                 </a>
 
