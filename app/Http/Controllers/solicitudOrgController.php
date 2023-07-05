@@ -39,7 +39,7 @@ class solicitudOrgController extends Controller
 
     public function crearActualizar(Request $request, $solicitudOrg){
         $solicitudOrg->Id_Oportunidad=           $request->Id_Oportunidad;
-        $solicitudOrg->Id_Validador=            $request->Id_Validador; 
+        $solicitudOrg->Id_Validador=             $request->Id_Validador; 
         $solicitudOrg->fechaRevicio=             $request->fechaRevicio;
         $solicitudOrg->Estatus=                  $request->Estatus;
         $solicitudOrg->save();
