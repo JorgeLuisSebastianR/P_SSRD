@@ -1,0 +1,80 @@
+.card {
+    background-color: #F3F6F7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #2C3564;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.col-form-label {
+    color: #8B93A4;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #A9B9BD;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    background-color: #8B93A4;
+}
+
+.invalid-feedback {
+    color: #ff0000;
+}
+
+.btn-primary {
+    background-color: #577381;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #8B93A4;
+}
+
+.btn-link {
+    color: #8B93A4;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn-link:hover {
+    color: #577381;
+}
+
+/* Animación del recuadro */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    animation: pulse 2s infinite;
+}
+
+/* Estilos del texto neon */
+
