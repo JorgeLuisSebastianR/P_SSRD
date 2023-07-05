@@ -27,7 +27,7 @@
                             <a href="{{ url('/estudiantes') }}">Estudiante</a>
                         </li>
                         <li>
-                            <a href="#">Organizacion</a>
+                            <a href="{{ url('/empresas') }}">Organizacion</a>
                         </li>
                     </ul>
                 </li>
