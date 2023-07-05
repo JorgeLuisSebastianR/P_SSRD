@@ -25,8 +25,8 @@
   <tbody>
     <tr>
       <th scope="row"> {{$estudiante->Id_Estudiante}} </th>
-      <td>{{$estudiante->Nombre}} </td>
-      <td>{{$estudiante->ApellidoPaterno}}</td>
+      <td>{{$estudiante->nombre}} </td>
+      <td>{{$estudiante->apellidoPaterno}}</td>
       <td>{{$estudiante->numControl}}</td>
       <td>{{$estudiante->carrera}}</td>
       <td>{{$estudiante->telefono}}</td>

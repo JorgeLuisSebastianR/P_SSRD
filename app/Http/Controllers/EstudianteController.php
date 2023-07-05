@@ -21,7 +21,8 @@ class EstudianteController extends Controller
      */
     public function create()
     {
-        return view('estudiantes.create');
+        $estudiantes = EstudianteModel::get();
+        return view('estudiantes.create', compact('estudiantes'));
     }
 
     /**
