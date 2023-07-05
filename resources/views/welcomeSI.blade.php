@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Grayscale - Start Bootstrap Theme</title>
+        <title>SAF</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -26,10 +26,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar sesion </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Servicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Residencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contactanos</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,8 +41,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Social Air Finder</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Encuentra tu espacio y desarrolla tu potencial.</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
+
                     </div>
                 </div>
             </div>
@@ -52,12 +51,10 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
+                        <h2 class="text-white mb-4">¿Por que es importante hacer servicio social?</h2>
                         <p class="text-white-50">
-                            Instituto Tecnológico Superior de Teziutlán
-La Juventud de hoy, Tecnología del mañana
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
+                            El servicio social es crucial para contribuir a la comunidad y a la sociedad. Nos ayuda a desarrollarnos personalmente, 
+                            aplicar conocimientos, entender distintas realidades y establecer contactos valiosos para el futuro. Es una forma significativa de marcar una diferencia positiva.
                         </p>
                     </div>
                 </div>
@@ -72,8 +69,8 @@ La Juventud de hoy, Tecnología del mañana
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <h4>¿Por que es importante hacer residencia profesional?</h4>
+                            <p class="text-black-50 mb-0">Hacer residencia es esencial para el desarrollo profesional. Proporciona experiencia práctica, aprendizaje intensivo y oportunidades de trabajo. Durante este período, se adquieren habilidades y conocimientos específicos de la profesión, se establecen contactos valiosos y se valida la competencia profesional. La residencia es un paso fundamental para el crecimiento y éxito en una carrera.</p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +110,7 @@ La Juventud de hoy, Tecnología del mañana
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <h2 class="text-white mb-5">¡Contactanos!</h2>
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -124,11 +121,11 @@ La Juventud de hoy, Tecnología del mañana
                         <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Escribenos tu correo..." aria-label="Introducir la dirección de correo electrónico..." data-sb-validations="requerido, correo electrónico" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Enviar</button></div>
                             </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">Se requiere un email.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email no valido.</div>
                             <!-- Submit success message-->
                             <!---->
                             <!-- This is what your users will see when the form-->
@@ -159,9 +156,9 @@ La Juventud de hoy, Tecnología del mañana
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
+                                <h4 class="text-uppercase m-0">Direccion</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">Fracción l y ll SN, 73960 Teziutlán, Pue.</div>
                             </div>
                         </div>
                     </div>
@@ -169,9 +166,9 @@ La Juventud de hoy, Tecnología del mañana
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
+                                <h4 class="text-uppercase m-0">Correo electronico</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                                <div class="small text-black-50"><a href="#!">soporte.correo@teziutlan.tecnm.mx</a></div>
                             </div>
                         </div>
                     </div>
@@ -179,9 +176,9 @@ La Juventud de hoy, Tecnología del mañana
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <h4 class="text-uppercase m-0">Telefono</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50">+(52)2313114001</div>
                             </div>
                         </div>
                     </div>
@@ -189,12 +186,12 @@ La Juventud de hoy, Tecnología del mañana
                 <div class="social d-flex justify-content-center">
                     <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" href="#!"><i class="fa-brands fa-instagram"></i></i></i></a>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; SAF 2023</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

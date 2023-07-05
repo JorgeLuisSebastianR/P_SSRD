@@ -40,12 +40,12 @@
     <div class="col-12">
         <div class="form-group">
             <label for="fechaInicio">Fecha de Inicio:</label>
-            <input type="text" class="form-control" name="fechaInicio" id="fechaInicio" value="{{ isset($oportunidad) ? $oportunidad->fechaInicio : old('fechaInicio') }}" required></div></div>
+            <input type="date" class="form-control" name="fechaInicio" id="fechaInicio" value="{{ isset($oportunidad) ? $oportunidad->fechaInicio : old('fechaInicio') }}" required></div></div>
 </div>
 
 <div class="row">
     <div class="col-12">
         <div class="form-group">
             <label for="fechaFin">Fecha de Fin:</label>
-            <input type="text" class="form-control" name="fechaFin" id="fechaFin" value="{{ isset($oportunidad) ? $oportunidad->fechaFin : old('fechaFin') }}" required></div></div>
+            <input type="date" class="form-control" name="fechaFin" id="fechaFin" value="{{ isset($oportunidad) ? $oportunidad->fechaFin : old('fechaFin') }}" required></div></div>
 </div>
