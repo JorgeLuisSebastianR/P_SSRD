@@ -7,8 +7,15 @@ use App\Http\Controllers\SolicitudEmpresaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\EstudianteController;
 use App\Http\Controllers\EmpresaController;
+use App\Http\Controllers\EstatusSolicitudController;
 
 use App\Http\Controllers\solicitudOrgController;
+use App\Http\Controllers\SolicutudEstudianteController;
+
+
+
+use App\Http\Controllers\CustomSolicitudEmpresaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -33,8 +40,12 @@ Route::resource('Aspirantes',SolicitudEmpresaController::class);
 Route::resource('users',UserController::class);
 Route::resource('estudiantes',EstudianteController::class);
 Route::resource('empresas', EmpresaController::class);
+Route::get('/estatussolicitudes', [CustomSolicitudEmpresaController::class, 'index'])->name('solicitudes.index');
+Route::resource('solicitudes', SolicutudEstudianteController::class);
+Route::resource('estatusSolicitudes', EstatusSolicitudController::class);
 
 Route::resource('solicitudOrgs',solicitudOrgController::class);
+Route::get('/solicitudes', [SolicutudEstudianteController::class, 'index'])->name('solicitudes.index');
 
 Route::get('/ayudas/indexAyudaA', [App\Http\Controllers\AyudaController::class, 'index'])->name('ayudas');
 Route::get('/contactos/indexcontactoE', [App\Http\Controllers\ContactoController::class, 'contactoE'])->name('contactos');

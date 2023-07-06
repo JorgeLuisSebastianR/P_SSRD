@@ -15,7 +15,7 @@ class SolicitudEmpresaModel extends Model
     protected $fillable = [
         'Id_Solicitud',
         'Id_Empresa',
-        'Fecha',
-        'Tipo'
+        'fechaRevicio',
+        'Estatus'
     ];
 }

@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="{{asset ('css/sidebarAdmin.css')}}">
+
+    
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">

@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F6F7;
+    color: #577381;
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+/* Estilos de la barra lateral */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #A9B9BD;
+    color: #F3F6F7;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    width: 70px;
+}
+
+#sidebar .sidebar-header {
+    text-align: center;
+    padding: 10px;
+    background-color: #8B93A4;
+    color: #F3F6F7;
+}
+
+#sidebar ul.components {
+    padding: 20px;
+}
+
+#sidebar ul li a {
+    display: block;
+    color: #F3F6F7;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background-color: #BA9F73;
+    color: #F3F6F7;
+}
+
+#sidebar ul li.active > a {
+    background-color: #BA9F73;
+    color: #F3F6F7;
+}
+
+#sidebar .sidebar-header strong {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #F3F6F7;
+}
+
+/* Estilos del contenido de la página */
+#content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+#content.active {
+    margin-left: 70px;
+}
+
+/* Estilos del botón para minimizar la barra lateral */
+#sidebarCollapse {
+    background-color: #8B93A4;
+    color: #F3F6F7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse:hover {
+    background-color: #577381;
+    color: #F3F6F7;
+}
+
+/* Estilos de los iconos */
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Estilos para animar el fondo en las esquinas */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #8B93A4;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+body::before {
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+body::after {
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#sidebar.active ~ body::before,
+#sidebar.active ~ body::after {
+    width: 20px;
+}
+
