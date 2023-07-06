@@ -24,7 +24,11 @@ class SolicutudEstudianteController extends Controller
      */
     public function create()
     {
-        //
+        $oportunidades = oportunidadModel::select('*')->get();
+        $solicitudOrgs = solicitudOrgModel::select('*')->where('Estatus', 'aceptada')->get();
+        $SolicitudesEstudiantes = SolicutudEstudianteModel::select('*')->get();
+        return view('solicitudes.create',compact('SolicitudesEstudiantes','solicitudOrgs','oportunidades'));
+    
     }
 
     /**

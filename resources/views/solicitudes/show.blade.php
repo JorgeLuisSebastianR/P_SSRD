@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
     <div class="container">
         <div class="card">
             <div class="card-header">
@@ -11,16 +12,10 @@
                 <p><strong>Tipo:</strong>                   {{$solicitudOrgs->oportunidad->Tipo}}</p>
                 <p><strong>Fecha de Inicio:</strong>        {{$solicitudOrgs->oportunidad->fechaInicio}}</p>
                 <p><strong>Fecha de culminacion:</strong>   {{$solicitudOrgs->oportunidad->fechaFin}}</p>
-        
-
-                <form action="{{--route('solicitudOrgs.store')--}}" method="POST" enctype="multipart/form-data" id="create">
-                    @include('solicitudes\partials\from')
-                </form>
             </div>
 
             <a href="{{route('solicitudes.index')}}" class="btn btn-success">
-                <i class="fa-solid fa-plus"></i>
-                Regresar
+            Regresar
             </a>
         </div>
     </div>
