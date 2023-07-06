@@ -13,6 +13,9 @@ use App\Http\Controllers\SolicutudEstudianteController;
 
 
 
+use App\Http\Controllers\CustomSolicitudEmpresaController;
+
+Route::get('/estatussolicitudes', [CustomSolicitudEmpresaController::class, 'index'])->name('solicitudes.index');
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +42,7 @@ Route::resource('estudiantes',EstudianteController::class);
 Route::resource('empresas', EmpresaController::class);
 
 Route::resource('solicitudOrgs',solicitudOrgController::class);
-Route::resource('solicitudes',SolicutudEstudianteController::class);
+Route::get('/solicitudes', [SolicutudEstudianteController::class, 'index'])->name('solicitudes.index');
 
 Route::get('/ayudas/indexAyudaA', [App\Http\Controllers\AyudaController::class, 'index'])->name('ayudas');
 Route::get('/contactos/indexcontactoA', [App\Http\Controllers\ContactoController::class, 'index'])->name('contactos');
