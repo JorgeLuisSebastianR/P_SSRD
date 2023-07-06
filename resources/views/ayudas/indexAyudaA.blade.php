@@ -39,7 +39,7 @@
                                 respuesta que has encontrado. Proporciona detalles sobre los dispositivos y navegadores
                                 en los que has experimentado el problema, adjunta las capturas de pantalla o el video si
                                 es posible, y proporciona cualquier otra información relevante.</li>
-                            <li>Si la información que se ingrese para crear los usuarios Estudiante o Empresa no esta comple no se podra crear.</li> 
+                            <li>Si la información que se ingrese en los formularios para crear los usuarios Estudiante o Empresa no esta completa no se podra crear.</li> 
                         </ul>
                     </td>
                 </tr>
