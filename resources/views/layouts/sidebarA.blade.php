@@ -55,7 +55,7 @@
                 <li>
                     <a href="{{ url('/contactos/indexcontactoA') }}">
                         <i class="fas fa-paper-plane"></i>
-                        <b>Contact</b>
+                        <b>Contactanos</b>
                     </a>
                 </li>
                 <!--<li class="{{'clientes'==Request::is('clientes*')?'active': ''}}">
