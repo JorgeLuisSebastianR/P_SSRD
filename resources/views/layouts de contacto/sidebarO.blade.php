@@ -1,11 +1,8 @@
-    
-    <link rel="stylesheet" href="{{asset ('css/sidebarAdmin.css')}}">
-
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Estudiante</h3>
+                <h3>Organizacion</h3>
                 <strong>PRO</strong>
             </div>
 
@@ -16,32 +13,42 @@
                         <b>Home</b>
                     </a>                    
                 </li>
-                
+                <!-- Elementos del usuario Admin  -->
 
-                <!-- Elementos del usuario Organizacion  -->
-        
-                <li>
-                    <a href="{{ url('/solicitudes') }}">
-                        <i class="fa fa-file-text-o"></i>
-                        <b>Explorar prácticas</b>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url('/estatusSolicitudes') }}">
-                        <i class="fas fa-bells"></i>
-                        <b>Estatus solicitud</b>
-                    </a>
-                </li>
 
                 <!-- Elementos del usuario Organizacion  -->
                 <li>
-                    <a href="{{ url('/ayudas/indexAyudaE') }}">
+                    <a href="#Oportunidades1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-image"></i>
+                        <b>Oportunidades</b>
+                    </a>
+                    <ul class="collapse list-unstyled" id="Oportunidades1">
+                        <li>
+                            <a href="{{ url('/oportunidades') }}">Contenido</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/estatuoportunidades') }}">Estatus</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ url('/Aspirantes') }}">
+                        <i class="fas fa-image"></i>
+                        <b>Aspirantes</b>
+                    </a>
+                </li>
+
+                <!-- Elementos del usuario Organizacion  -->
+
+
+                <li>
+                    <a href="{{ url('/ayudas/indexAyudaO') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/contactos/indexcontactoE') }}">
+                    <a href="{{ url('/contactos/indexcontactoO') }}">
                         <i class="fas fa-paper-plane"></i>
                         <b>Contact</b>
                     </a>
