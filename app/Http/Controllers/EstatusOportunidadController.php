@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\EstatusOportunidadModel;
+use App\Models\solicitudOrgModel;
+use App\Models\oportunidadModel;
 
 class EstatusOportunidadController extends Controller
 {
@@ -12,8 +14,9 @@ class EstatusOportunidadController extends Controller
      */
     public function index()
     {
-        $estatuoportunidades = EstatusOportunidadModel::select('*')->get();
-        return view('estatuoportunidades.index',compact('estatuoportunidades'));
+        $estatuoportunidades = solicitudOrgModel::select('*')->get();
+        $oportunidades = oportunidadModel::select('*')->get();
+        return view('estatuoportunidades.index',compact('estatuoportunidades','oportunidades'));
     }
 
     /**

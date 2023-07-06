@@ -21,9 +21,10 @@
   @foreach($estatuoportunidades as $estatuoportunidade)
     <tr>
       <th scope="row">{{$estatuoportunidade->Id_Oportunidad }} </th>
-      <td>{{$estatuoportunidade->Id_Validador }} </td>
+      <td>{{$estatuoportunidade->oportunidad->nombreProyecto}} </td>
       <td>{{$estatuoportunidade->fechaRevicio}} </td>
       <td>{{$estatuoportunidade->Estatus}} </td>
+
   </tbody>
   @endforeach
 </table>
