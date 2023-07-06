@@ -14,7 +14,8 @@ class EstatusOportunidadController extends Controller
      */
     public function index()
     {
-        $estatuoportunidades = solicitudOrgModel::select('*')->get();
+        
+        $estatuoportunidades = solicitudOrgModel::select('*')->distinct('Id_Oportunidad')->get();
         $oportunidades = oportunidadModel::select('*')->get();
         return view('estatuoportunidades.index',compact('estatuoportunidades','oportunidades'));
     }
