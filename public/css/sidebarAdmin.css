@@ -1,10 +1,10 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F3F6F7;
-    color: #577381;
+    background-color: #F6F8FA;
+    color: #333333;
+    margin: 0;
 }
-
 
 .wrapper {
     display: flex;
@@ -17,10 +17,12 @@ body {
     left: 0;
     width: 250px;
     height: 100vh;
-    background-color: #A9B9BD;
+    background-color: #2A3F54;
     color: #F3F6F7;
     padding-top: 20px;
     transition: all 0.3s;
+    z-index: 1000;
+    overflow-y: auto;
 }
 
 #sidebar.active {
@@ -30,7 +32,7 @@ body {
 #sidebar .sidebar-header {
     text-align: center;
     padding: 10px;
-    background-color: #8B93A4;
+    background-color: #1A2935;
     color: #F3F6F7;
 }
 
@@ -47,12 +49,12 @@ body {
 }
 
 #sidebar ul li a:hover {
-    background-color: #BA9F73;
+    background-color: #577381;
     color: #F3F6F7;
 }
 
 #sidebar ul li.active > a {
-    background-color: #BA9F73;
+    background-color: #577381;
     color: #F3F6F7;
 }
 
@@ -76,7 +78,7 @@ body {
 
 /* Estilos del botón para minimizar la barra lateral */
 #sidebarCollapse {
-    background-color: #8B93A4;
+    background-color: #1A2935;
     color: #F3F6F7;
     border: none;
     border-radius: 4px;
@@ -84,11 +86,14 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     transition: all 0.3s;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    z-index: 1001;
 }
 
 #sidebarCollapse:hover {
     background-color: #577381;
-    color: #F3F6F7;
 }
 
 /* Estilos de los iconos */
@@ -104,7 +109,7 @@ body::after {
     top: 0;
     width: 50px;
     height: 50px;
-    background-color: #8B93A4;
+    background-color: #1A2935;
     z-index: -1;
     transition: all 0.3s;
 }
@@ -121,6 +126,5 @@ body::after {
 
 #sidebar.active ~ body::before,
 #sidebar.active ~ body::after {
-    width: 20px;
+    width: 20;
 }
-
