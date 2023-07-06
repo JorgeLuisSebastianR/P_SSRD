@@ -6,7 +6,7 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Administrador</h3>
-                <strong>PRO</strong>
+                <strong>SSRD</strong>
             </div>
            
             

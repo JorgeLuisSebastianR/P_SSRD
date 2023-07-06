@@ -25,11 +25,11 @@
   @foreach($solicitudes as $solicitude)
     <tr>
       <th scope="row">{{$solicitude->Id_Solicitud}}</th>
-      <td>{{$solicitude->Id_Estudiante }} </td>
-      <td>{{$solicitude->Semestre }}                   </td>
-      <td>{{$solicitude->idCliente}}                   </td>
-      <td>{{$solicitude->Fecha}}                   </td>
-      <td>{{$solicitude->Fecha}}                   </td>
+      <td>{{$solicitude->Id_OportunidadValidador  }} </td>
+      <td>{{$solicitude->Id_Estudiante }}                   </td>
+      <td>{{$solicitude->Habilidades}}                   </td>
+      <td>{{$solicitude->Semestre}}                   </td>
+      <td>{{$solicitude->fechaSolicitud}}                   </td>
       <td>{{$solicitude->Fecha}}                   </td>
       @endforeach
   </tbody>

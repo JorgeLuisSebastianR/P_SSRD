@@ -3,7 +3,15 @@
 
 <head>
 
-<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -27,7 +35,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Prueba de menu desplegable -->
-    <link rel="stylesheet" href="{{asset ('css/sidebar.css')}}">
+    <link rel="stylesheet" href="{{asset ('css/app.css')}}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -43,13 +51,7 @@
 
 
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
-    </script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
-    </script>
+
 
 </head>
 
@@ -59,7 +61,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" style="color:bisque;">
                     {{ config('app.name', '') }}
-                </a> 
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -78,7 +80,7 @@
                         @guest
                         @if (Route::has('login'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}" >{{ __('Iniciar Sesión') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
                         </li>
                         @endif
 
@@ -89,14 +91,15 @@
                         @endif
                         @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: white;">
+                            <a id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" v-pre style="color: white;" href="{{ route('perfil.profile') }}">
                                 {{ __(' Hola ') }}{{ Auth::user()->name }}
                             </a>
 
                             <div aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" style="color: white;">
+                                                     document.getElementById('logout-form').submit();"
+                                    style="color: white;">
                                     {{ __('Cerrar sesion') }}
                                 </a>
 
@@ -114,25 +117,25 @@
         <div id="app" class="wrapper">
             @guest
             <!-- Código para usuarios no autenticados -->
-        @else
+            @else
             @if (Auth::user()->tipo === 'Alumno')
-                @include('layouts.sidebarE')
+            @include('layouts.sidebarE')
             @elseif (Auth::user()->tipo === 'Admin')
-                @include('layouts.sidebarA')
+            @include('layouts.sidebarA')
             @elseif (Auth::user()->tipo === 'Organizacion')
-                @include('layouts.sidebarO')
+            @include('layouts.sidebarO')
             @endif
-        @endguest
-        
+            @endguest
 
-        <div id="content">
-        <main class="py-4">
-            @include('components.flash_alerts')
-            @yield('content')
-        </main>
+
+            <div id="content">
+                <main class="py-4">
+                    @include('components.flash_alerts')
+                    @yield('content')
+                </main>
 
             </div>
-        </div>       
+        </div>
     </div>
 
 </body>

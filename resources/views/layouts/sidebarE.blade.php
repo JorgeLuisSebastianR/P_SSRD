@@ -6,7 +6,7 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Estudiante</h3>
-                <strong>PRO</strong>
+                <strong>SSRD</strong>
             </div>
 
             <ul class="list-unstyled components">
@@ -23,7 +23,7 @@
                 <li>
                     <a href="{{ url('/solicitudes') }}">
                         <i class="fa fa-file-text-o"></i>
-                        <b>Explorar prácticas</b>
+                        <b>Explorar Oportunidades</b>
                     </a>
                 </li>
                 <li>

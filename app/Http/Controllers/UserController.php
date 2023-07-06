@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+use Illuminate\Support\Facades\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -24,7 +25,11 @@ class UserController extends Controller
         return view('users.index', compact('users'));
     }
     
-    
+    public function profile()
+    {
+        $user = Auth::user();
+        return view('perfil.profile', compact('user'));
+    }
     /**
      * Show the form for creating a new resource.
      */

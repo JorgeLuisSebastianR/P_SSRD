@@ -5,7 +5,7 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Organizacion</h3>
-                <strong>PRO</strong>
+                <strong>SSRD</strong>
             </div>
 
             <ul class="list-unstyled components">
