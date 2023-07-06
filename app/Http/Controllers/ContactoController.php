@@ -59,6 +59,13 @@ class ContactoController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        
     }
+    public function contactoE(){
+        return view('contactos.indexcontactoE');
+   }
+   public function contactoO(){
+    return view('contactos.indexcontactoO');
+}
+
 }

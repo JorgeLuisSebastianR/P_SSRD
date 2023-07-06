@@ -37,5 +37,6 @@ Route::resource('empresas', EmpresaController::class);
 Route::resource('solicitudOrgs',solicitudOrgController::class);
 
 Route::get('/ayudas/indexAyudaA', [App\Http\Controllers\AyudaController::class, 'index'])->name('ayudas');
-Route::get('/contactos/indexcontactoA', [App\Http\Controllers\ContactoController::class, 'index'])->name('contactos');
+Route::get('/contactos/indexcontactoE', [App\Http\Controllers\ContactoController::class, 'contactoE'])->name('contactos');
+Route::get('/contactos/indexcontactoO', [App\Http\Controllers\ContactoController::class, 'contactoO'])->name('contactos');
 

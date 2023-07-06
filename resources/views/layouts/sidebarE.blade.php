@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/contactos') }}">
+                    <a href="{{ url('/contactos/indexcontactoE') }}">
                         <i class="fas fa-paper-plane"></i>
                         <b>Contact</b>
                     </a>
