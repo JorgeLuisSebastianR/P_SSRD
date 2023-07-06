@@ -57,15 +57,13 @@ class ContactoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
-    {
+    public function destroy(string $id){
         
     }
-    public function contactoE(){
+      public function contactoE(){
         return view('contactos.indexcontactoE');
    }
-   public function contactoO(){
+      public function contactoO(){
     return view('contactos.indexcontactoO');
 }
-
 }
