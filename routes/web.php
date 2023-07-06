@@ -39,11 +39,8 @@ Route::resource('Aspirantes',SolicitudEmpresaController::class);
 Route::resource('users',UserController::class);
 Route::resource('estudiantes',EstudianteController::class);
 Route::resource('empresas', EmpresaController::class);
-<<<<<<< HEAD
 Route::get('/estatussolicitudes', [CustomSolicitudEmpresaController::class, 'index'])->name('solicitudes.index');
-=======
 Route::resource('solicitudes', SolicutudEstudianteController::class);
->>>>>>> f04facf2df859664d66a84fe02c9138ad5a893c6
 
 Route::resource('solicitudOrgs',solicitudOrgController::class);
 Route::get('/solicitudes', [SolicutudEstudianteController::class, 'index'])->name('solicitudes.index');
