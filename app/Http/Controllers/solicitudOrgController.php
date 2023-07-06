@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\solicitudOrgModel;
 use App\Models\oportunidadValidadorModel; // Asegúrate de importar el modelo correcto
 use App\Models\oportunidadModel;
+use App\Models\UserModel;
 
 use Illuminate\Http\Request;
 
@@ -16,7 +17,8 @@ class solicitudOrgController extends Controller
     {
         $oportunidades = oportunidadModel::select('*')->get();
         $solicitudOrgs = solicitudOrgModel::select('*')->get();
-        return view('solicitudOrgs.index',compact('solicitudOrgs','oportunidades'));
+        $users = UserModel::select('*')->get();
+        return view('solicitudOrgs.index',compact('solicitudOrgs','oportunidades','users'));
     }
 
     /**
@@ -32,6 +34,7 @@ class solicitudOrgController extends Controller
      */
     public function store(Request $request)
     {
+        $user = UserModel::select('*')->get();
         $solicitudOrg = new solicitudOrgModel(); // Usa el modelo correcto
         $solicitudOrg = $this->crearActualizar($request, $solicitudOrg);
         return redirect()->route('oportunidades.index')->with('message','Se ha cargado correctamente');
