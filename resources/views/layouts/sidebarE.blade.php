@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/estatusSolicitudes') }}">
                         <i class="fas fa-bells"></i>
                         <b>Estatus solicitud</b>
                     </a>

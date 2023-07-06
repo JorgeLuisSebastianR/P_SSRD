@@ -1,7 +1,7 @@
 @csrf
 
 <input type="hidden" class="form-control" name="Id_Estudiante" id="Id_Estudiante" value="{{ old('Id_Estudiante') }}" required>
-<input type="hidden" class="form-control" name="Id_OportunidadValidador" id="Id_OportunidadValidador" value="{{$solicitudOrg->Id_OportunidadValidador}}" required>
+<input type="hidden" class="form-control" name="Id_OportunidadValidador" id="Id_OportunidadValidador" value="" required>
 <input type="hidden" class="form-control" name="fechaSolicitud" id="fechaSolicitud" value="{{date('Y-m-d')}}" required>
  
 <div class="row">
