@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class EstudianteModel extends Model
 {
     use HasFactory;
+
     protected $primaryKey = 'Id_Estudiante';
-    protected $foreingKey = 'id';
 
     protected $table = 'estudiantes';
 
@@ -25,7 +25,9 @@ class EstudianteModel extends Model
         'telefono'
     ];
 
-    public function usuario(){
-        return $this->belongsTo('App\Models\UserModel', 'id', 'id');
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id');
     }
 }
+
