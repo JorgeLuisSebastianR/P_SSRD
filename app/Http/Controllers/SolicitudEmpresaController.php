@@ -12,12 +12,8 @@ class SolicitudEmpresaController extends Controller
      */
     public function index()
     {
-        //$solicitudes = SolicitudEmpresaModel::select('*')->get();
-        $solicitudes = SolicitudEmpresaModel::select('Solicitud_Empresa.*', 'Oportunidad.nombreProyecto')
-    ->join('Solicitud', 'Solicitud_Empresa.Id_Solicitud', '=', 'Solicitud.Id_Solicitud')
-    ->join('Oportunidad_Validador', 'Solicitud.Id_OportunidadValidador', '=', 'Oportunidad_Validador.Id_OportunidadValidador')
-    ->join('Oportunidad', 'Oportunidad_Validador.Id_Oportunidad', '=', 'Oportunidad.Id_Oportunidad')
-    ->get();
+        $solicitudes = SolicitudEmpresaModel::select('*')->get();
+       
 
         return view('Aspirantes.index',compact('solicitudes'));
     }

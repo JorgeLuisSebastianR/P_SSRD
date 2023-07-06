@@ -29,6 +29,8 @@
       <td>{{$solicitude->Semestre }}                   </td>
       <td>{{$solicitude->idCliente}}                   </td>
       <td>{{$solicitude->Fecha}}                   </td>
+      <td>{{$solicitude->Fecha}}                   </td>
+      <td>{{$solicitude->Fecha}}                   </td>
       @endforeach
   </tbody>
 </table>
