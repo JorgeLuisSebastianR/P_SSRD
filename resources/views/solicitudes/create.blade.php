@@ -16,7 +16,7 @@
 
 
     <div class="card-body">
-        <form action="{{ route('solicitudes.store') }}" method="POST" enctype="multipart/form-data" id="create">
+        <form action="{{route('solicitudes.store')}}" method="POST" enctype="multipart/form-data" id="create">
             @include('solicitudes\partials\from')
         </form>
 
