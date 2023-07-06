@@ -18,7 +18,7 @@
                 <!-- Elementos del usuario Organizacion  -->
         
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/solicitudes') }}">
                         <i class="fa fa-file-text-o"></i>
                         <b>Explorar prácticas</b>
                     </a>

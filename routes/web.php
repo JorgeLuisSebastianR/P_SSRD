@@ -9,6 +9,7 @@ use App\Http\Controllers\EstudianteController;
 use App\Http\Controllers\EmpresaController;
 
 use App\Http\Controllers\solicitudOrgController;
+use App\Http\Controllers\SolicutudEstudianteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::resource('estudiantes',EstudianteController::class);
 Route::resource('empresas', EmpresaController::class);
 
 Route::resource('solicitudOrgs',solicitudOrgController::class);
+Route::resource('solicitudes',SolicutudEstudianteController::class);
 
 Route::get('/ayudas/indexAyudaA', [App\Http\Controllers\AyudaController::class, 'index'])->name('ayudas');
 Route::get('/contactos/indexcontactoA', [App\Http\Controllers\ContactoController::class, 'index'])->name('contactos');
