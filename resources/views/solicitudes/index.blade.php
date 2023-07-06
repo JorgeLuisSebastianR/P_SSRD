@@ -18,7 +18,7 @@
   </thead>
   <tbody>
   @foreach($solicitudOrgs as $solicitudOrg)
-    <tr>
+    <tr> 
       <th scope="row"> {{$solicitudOrg->Id_OportunidadValidador}} </th>
       <td> {{$solicitudOrg->oportunidad->nombreProyecto}} </td>
       <td> {{$solicitudOrg->oportunidad->Descripcion}} </td>
