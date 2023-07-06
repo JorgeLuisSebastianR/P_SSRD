@@ -78,11 +78,7 @@
                         @guest
                         @if (Route::has('login'))
                         <li class="nav-item">
-<<<<<<< HEAD
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar sesion') }}</a>
-=======
-                            <a class="nav-link" href="{{ route('login') }}" >{{ __('') }}</a>
->>>>>>> babc9e8b1a1c67e3dec16d36d76aefa360816714
                         </li>
                         @endif
 
