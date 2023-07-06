@@ -54,8 +54,9 @@ class solicitudOrgController extends Controller
      */
     public function show(string $id)
     {
+        $users = UserModel::select('*')->get();
         $oportunidad = oportunidadModel::where('Id_Oportunidad', $id)->firstOrFail();
-        return view('solicitudOrgs.show', compact('oportunidad'));
+        return view('solicitudOrgs.show', compact('oportunidad','users'));
     }
 
     /**
