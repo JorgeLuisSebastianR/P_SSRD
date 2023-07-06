@@ -26,7 +26,7 @@
                 <li>
                     <a href="#">
                         <i class="fas fa-bells"></i>
-                        <b>Estatus solisitud</b>
+                        <b>Estatus solicitud</b>
                     </a>
                 </li>
 
