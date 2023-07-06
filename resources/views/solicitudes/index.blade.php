@@ -19,14 +19,14 @@
   <tbody>
   @foreach($solicitudOrgs as $solicitudOrg)
     <tr>
-      <th scope="row"> {{$solicitudOrg->Id_Oportunidad}} </th>
+      <th scope="row"> {{$solicitudOrg->Id_OportunidadValidador}} </th>
       <td> {{$solicitudOrg->oportunidad->nombreProyecto}} </td>
       <td> {{$solicitudOrg->oportunidad->Descripcion}} </td>
       <td> {{$solicitudOrg->oportunidad->Requisitos}}</td>
       <td> {{$solicitudOrg->oportunidad->Tipo}} </td>
       <td> {{$solicitudOrg->oportunidad->fechaInicio}} </td>
       <td>
-        <a href="{{--route('solicitudOrgs.show',$oportunidad->Id_Oportunidad)--}}" class="btn btn-primary"> <i class="fas fa-eye">       </i></a>
+        <a href="{{route('solicitudes.show',$solicitudOrg->Id_OportunidadValidador)}}" class="btn btn-primary"> <i class="fas fa-eye">       </i></a>
     </tr>
     @endforeach
   </tbody>

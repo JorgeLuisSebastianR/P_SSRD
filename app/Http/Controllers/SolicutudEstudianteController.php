@@ -40,7 +40,10 @@ class SolicutudEstudianteController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $oportunidades = oportunidadModel::select('*')->get();
+        $solicitudOrgs = solicitudOrgModel::select('*')->where('Estatus', 'aceptada')->where('Id_OportunidadValidador', $id)->firstOrFail();
+        $SolicitudesEstudiantes = SolicutudEstudianteModel::select('*')->get();
+        return view('solicitudes.show',compact('SolicitudesEstudiantes','solicitudOrgs','oportunidades'));
     }
 
     /**
