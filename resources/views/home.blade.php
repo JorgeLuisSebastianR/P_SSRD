@@ -19,7 +19,7 @@
 
                     <div class="text-center mt-4">
                         <h4></h4>
-                        <p>Navega por las distintas opciones que tenemos para ti!.</p>
+                        <p>Navega por las distintas opciones que tenemos para ti.</p>
                     </div>
 
                     <div class="text-center mt-4">
