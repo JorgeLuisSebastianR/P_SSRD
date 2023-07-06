@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\solicitudOrgModel;
+use App\Models\oportunidadValidadorModel; // Asegúrate de importar el modelo correcto
 use App\Models\oportunidadModel;
+use App\Models\UserModel;
 
 use Illuminate\Http\Request;
 
@@ -15,7 +17,8 @@ class solicitudOrgController extends Controller
     {
         $oportunidades = oportunidadModel::select('*')->get();
         $solicitudOrgs = solicitudOrgModel::select('*')->get();
-        return view('solicitudOrgs.index',compact('solicitudOrgs','oportunidades'));
+        $users = UserModel::select('*')->get();
+        return view('solicitudOrgs.index',compact('solicitudOrgs','oportunidades','users'));
     }
 
     /**
@@ -31,17 +34,17 @@ class solicitudOrgController extends Controller
      */
     public function store(Request $request)
     {
-        $solicitudOrg = new oportunidadModel();
-        $solicitudOrg =$this->crearActualizar($request, $solicitudOrg);
+        $user = UserModel::select('*')->get();
+        $solicitudOrg = new solicitudOrgModel(); // Usa el modelo correcto
+        $solicitudOrg = $this->crearActualizar($request, $solicitudOrg);
         return redirect()->route('oportunidades.index')->with('message','Se ha cargado correctamente');
-    
     }
 
     public function crearActualizar(Request $request, $solicitudOrg){
-        $solicitudOrg->Id_Oportunidad=           $request->Id_Oportunidad;
-        $solicitudOrg->Id_Validador=             $request->Id_Validador; 
-        $solicitudOrg->fechaRevicio=             $request->fechaRevicio;
-        $solicitudOrg->Estatus=                  $request->Estatus;
+        $solicitudOrg->Id_Oportunidad = $request->Id_Oportunidad;
+        $solicitudOrg->Id_Validador = $request->Id_Validador; 
+        $solicitudOrg->fechaRevicio = $request->fechaRevicio;
+        $solicitudOrg->Estatus = $request->Estatus;
         $solicitudOrg->save();
         return $solicitudOrg;
     }
@@ -51,8 +54,9 @@ class solicitudOrgController extends Controller
      */
     public function show(string $id)
     {
-        $oportunidad = oportunidadModel::where('Id_Oportunidad',$id)->firstOrFail();
-        return view('solicitudOrgs.show', compact('oportunidad'));
+        $users = UserModel::select('*')->get();
+        $oportunidad = oportunidadModel::where('Id_Oportunidad', $id)->firstOrFail();
+        return view('solicitudOrgs.show', compact('oportunidad','users'));
     }
 
     /**

@@ -18,7 +18,7 @@
                 <!-- Elementos del usuario Organizacion  -->
         
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/solicitudes') }}">
                         <i class="fa fa-file-text-o"></i>
                         <b>Explorar prácticas</b>
                     </a>
@@ -26,13 +26,13 @@
                 <li>
                     <a href="#">
                         <i class="fas fa-bells"></i>
-                        <b>Estatus solisitud</b>
+                        <b>Estatus solicitud</b>
                     </a>
                 </li>
 
                 <!-- Elementos del usuario Organizacion  -->
                 <li>
-                    <a href="{{ url('/ayudas') }}">
+                    <a href="{{ url('/ayudas/indexAyudaE') }}">
                         <i class="fas fa-image"></i>
                         <b>Ayuda</b>
                     </a>

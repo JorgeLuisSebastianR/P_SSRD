@@ -49,4 +49,8 @@ class User extends Authenticatable
     return $this->hasMany(EmpresaModel::class, 'id');
 }
 
+public function estudiantes()
+{
+    return $this->hasMany(EstudianteModel::class, 'id');
+}
 }

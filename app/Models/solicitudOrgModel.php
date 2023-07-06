@@ -18,4 +18,7 @@ class solicitudOrgModel extends Model
         'fechaRevicio',
         'Estatus'
     ];
+    public function oportunidad(){
+        return $this->belongsTo('\App\Models\oportunidadModel','Id_Oportunidad','Id_Oportunidad');
+    }
 }

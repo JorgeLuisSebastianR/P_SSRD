@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
+
 <div class="card mt-3">
     <div class="card-header d-inline-flex">
         <h2>Ayuda</h2>
@@ -31,7 +32,7 @@
                 </tr>
 
                 <tr>
-                    <td>No realiza una accion de respuesta sobre los usuarios?</td>
+                    <td>No hay solicitud de estudiantes?</td>
                     <td>
                         <ul>
                             <li>Si tiene una problema póngase en contacto con la institución a través del apartado
@@ -39,7 +40,8 @@
                                 respuesta que has encontrado. Proporciona detalles sobre los dispositivos y navegadores
                                 en los que has experimentado el problema, adjunta las capturas de pantalla o el video si
                                 es posible, y proporciona cualquier otra información relevante.</li>
-                            <li>Si la información que se ingrese en los formularios para crear los usuarios Estudiante o Empresa no esta completa no se podra crear.</li> 
+                            <li>Las solicitudes puede desapareces si el autorizada por Instituto Tecnológico Superior de Teziutlán o la empresa las han eliminado.</li> 
+                            <li>Al realizar una solicitud esta debe estar autorizada por Instituto Tecnológico Superior de Teziutlán por lo que su solicitudes puede tardar ser aceptada.</li>
                         </ul>
                     </td>
                 </tr>
@@ -81,5 +83,7 @@
     </div>
 
 </div>
+
+
 
 @endsection
