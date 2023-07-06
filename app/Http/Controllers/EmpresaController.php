@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\EmpresaModel;
+use Barryvdh\DomPDF\facade;
+use PDF;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
@@ -76,5 +78,11 @@ class EmpresaController extends Controller
         $empresa->delete();
 
         return redirect()->route('empresas.index')->with('message', 'Empresa eliminada correctamente');
+    }
+    public function exportPDF(){
+        $empresas = EmpresaModel::all();
+        $pdf = PDF ::loadView('empresas.exportPDF', compact('empresas'));
+        $pdf->setPaper('a4'. 'landscape');
+        return $pdf->stream();
     }
 }

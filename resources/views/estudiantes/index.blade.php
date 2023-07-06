@@ -9,6 +9,9 @@
     <a href="{{ route('estudiantes.create') }}" class="btn btn-success">
         <i class="fa fa-plus-square"></i>
         Agregar</a>
+        <a href="{{route('estudiantes.pdf')}}"  class="btn btn-outline-success">
+            <i class="fas fa-pencil-alt"></i>
+                Descargar PDF </a>
     </div>
     <table class="table table-striped">
         <thead>

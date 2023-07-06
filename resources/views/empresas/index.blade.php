@@ -7,8 +7,9 @@
     </div>
     <div class="card-body">
         <a href="{{ route('empresas.create') }}" class="btn btn-success mb-3">
-            <i class="fa fa-plus-square"></i> Agregar
-        </a>
+            <i class="fa fa-plus-square"></i> Agregar</a>
+        <a href="{{route('empresas.pdf')}}"  class="btn btn-outline-success">
+            <i class="fas fa-pencil-alt"></i> Descargar PDF </a>
         @if(session('message'))
         <div class="alert alert-success">
             {{ session('message') }}

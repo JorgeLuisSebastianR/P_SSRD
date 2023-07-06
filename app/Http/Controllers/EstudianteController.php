@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\facade;
+use PDF;
 use App\Models\EstudianteModel;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -130,6 +132,13 @@ class EstudianteController extends Controller
         $estudiante->delete();
 
         return redirect()->route('estudiantes.index')->with('success', 'Estudiante eliminado exitosamente');
+    }
+
+    public function exportPDF(){
+        $estudiantes = EstudianteModel::all();
+        $pdf = PDF ::loadView('estudiantes.exportPDF', compact('estudiantes'));
+        $pdf->setPaper('a4'. 'landscape');
+        return $pdf->stream();
     }
 }
 

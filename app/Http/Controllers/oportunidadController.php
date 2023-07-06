@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\oportunidadModel;
-
+use Barryvdh\DomPDF\facade;
+use PDF;
+use Illuminate\Support\Facades\Auth;
 class oportunidadController extends Controller
 {
     /**
@@ -90,5 +92,12 @@ class oportunidadController extends Controller
         }catch(QueryException $e){
             return redirect()->route('oportunidades.index')->with('message','Aaaaaa');
         }  
+    }
+
+public function exportPDF(){
+    $oportunidades = oportunidadModel::all();
+    $pdf = PDF ::loadView('oportunidades.exportPDF', compact('oportunidades'));
+    $pdf->setPaper('a4'. 'landscape');
+    return $pdf->stream();
     }
 }

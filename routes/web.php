@@ -35,11 +35,14 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('oportunidades',oportunidadController::class);
+Route::get('oportunidades-pdf', [oportunidadController::class, 'exportPDF'])->name('oportunidades.pdf');
 Route::resource('estatuoportunidades',EstatusOportunidadController::class);
 Route::resource('Aspirantes',SolicitudEmpresaController::class);
 Route::resource('users',UserController::class);
 Route::resource('estudiantes',EstudianteController::class);
+Route::get('estudiantes-pdf', [EstudianteController::class, 'exportPDF'])->name('estudiantes.pdf');
 Route::resource('empresas', EmpresaController::class);
+Route::get('empresas-pdf', [EmpresaController::class, 'exportPDF'])->name('empresas.pdf');
 Route::get('/estatussolicitudes', [CustomSolicitudEmpresaController::class, 'index'])->name('solicitudes.index');
 Route::resource('solicitudes', SolicutudEstudianteController::class);
 Route::resource('estatusSolicitudes', EstatusSolicitudController::class);

@@ -8,6 +8,9 @@
     <a href="{{route('oportunidades.create')}}" class="btn btn-success">
         <i class="fa fa-plus-square" ></i>
         agregar</a>
+        <a href="{{route('oportunidades.pdf')}}"  class="btn btn-outline-success">
+            <i class="fas fa-pencil-alt"></i>
+                Descargar PDF </a>
     </div>
     <table class="table table-striped">
   <thead>
