@@ -6,12 +6,12 @@
         <h1>usuarios</h1>
     </div>
     <div class="card-header d-inline-flex">
-    <a href="{{route('users.create')}}" class="btn btn-success">
+    <a href="{{route('users.create')}}" class="btn btn-warning">
         <i class="fa fa-plus-square" ></i>
         agregar</a>
     </div>
 
-    <table class="table table-striped">
+    <table class="table table-bordered ">
   <thead>
     <tr>
       <th scope="col">#ID</th>
