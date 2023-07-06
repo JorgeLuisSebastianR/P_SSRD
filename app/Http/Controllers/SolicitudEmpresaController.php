@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\SolicitudEmpresaModel;
+use App\Models\SolicitudEmModel;
 
 class SolicitudEmpresaController extends Controller
 {
@@ -12,9 +12,7 @@ class SolicitudEmpresaController extends Controller
      */
     public function index()
     {
-        $solicitudes = SolicitudEmpresaModel::select('*')->get();
-       
-
+        $solicitudes = SolicitudEmModel::select('*')->get();
         return view('Aspirantes.index',compact('solicitudes'));
     }
 
