@@ -38,9 +38,9 @@
 
     // Datos de ejemplo para la gráfica de barras
     var data = {
-        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+        labels: ['Condusef', 'Google', 'Microsoft', 'CFE', 'ITST', 'CBTIS 44'],
         datasets: [{
-            label: 'Empresas relacionadas',
+            label: 'Numero de alumnos en las dependencias',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: 'rgba(54, 162, 235, 0.5)',
             borderColor: 'rgba(54, 162, 235, 1)',
