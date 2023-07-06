@@ -18,15 +18,15 @@
                 <!-- Elementos del usuario Organizacion  -->
         
                 <li>
-                    <a href="{{ url('/solicitudes') }}">
+                    <a href="#">
                         <i class="fa fa-file-text-o"></i>
                         <b>Explorar prácticas</b>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/estatusSolicitudes') }}">
+                    <a href="#">
                         <i class="fas fa-bells"></i>
-                        <b>Estatus solicitud</b>
+                        <b>Estatus solisitud</b>
                     </a>
                 </li>
 
