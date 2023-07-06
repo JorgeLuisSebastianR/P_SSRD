@@ -1,4 +1,4 @@
-/* Estilos para el formulario de inicio de sesión */
+/* Estilos para el formulario de registro */
 .card {
     background-color: #F3F6F7;
     border-radius: 8px;
@@ -50,53 +50,30 @@
     background-color: #8B93A4;
 }
 
-.btn-link {
-    color: #8B93A4;
+select.form-control {
+    background-color: #A9B9BD;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: background-color 0.3s ease-in-out;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select.form-control:focus {
+    background-color: #8B93A4;
+}
+
+.btn-primary {
+    background-color: #577381;
+    border: none;
+    border-radius: 4px;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.btn-link:hover {
-    color: #577381;
-}
-
-/* Animación del recuadro */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.card {
-    animation: pulse 2s infinite;
-}
-
-/* Estilos del texto neon */
-@keyframes neon-glow {
-    20% {
-        text-shadow: 0 0 10px #BA9F73;
-    }
-    40% {
-        text-shadow: 0 0 20px #BA9F73;
-    }
-    60% {
-        text-shadow: 0 0 30px #BA9F73;
-    }
-    80% {
-        text-shadow: 0 0 40px #BA9F73;
-    }
-    100% {
-        text-shadow: 0 0 50px #BA9F73;
-    }
-}
-
-h3 {
-    color: #BA9F73;
-    animation: neon-glow 1.5s ease-in-out infinite alternate;
+.btn-primary:hover {
+    background-color: #8B93A4;
 }

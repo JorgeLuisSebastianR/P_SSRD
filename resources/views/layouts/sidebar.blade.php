@@ -70,7 +70,7 @@
                 <li>
                     <a href="#">
                         <i class="fas fa-image"></i>
-                        <b>Estatus solisitud</b>
+                        <b>Estatus solicitud</b>
                     </a>
                 </li>
 
@@ -84,7 +84,7 @@
                 <li>
                     <a href="#">
                         <i class="fas fa-paper-plane"></i>
-                        <b>Contact</b>
+                        <b>Contacto</b>
                     </a>
                 </li>
                 <!--<li class="{{'clientes'==Request::is('clientes*')?'active': ''}}">

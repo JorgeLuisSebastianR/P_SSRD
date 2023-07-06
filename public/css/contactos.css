@@ -1,0 +1,34 @@
+.contact-content {
+    background-color: #F3F6F7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-content h1 {
+    color: #2C3564;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-content p {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+    color: #577381;
+}

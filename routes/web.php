@@ -52,3 +52,5 @@ Route::get('/contactos/indexcontactoE', [App\Http\Controllers\ContactoController
 Route::get('/contactos/indexcontactoO', [App\Http\Controllers\ContactoController::class, 'contactoO'])->name('contactos');
 Route::get('/ayudas/indexAyudaE', [App\Http\Controllers\AyudaController::class, 'AyudaE'])->name('AyudaE');
 Route::get('/ayudas/indexAyudaO', [App\Http\Controllers\AyudaController::class, 'AyudaO'])->name('AyudaO');
+
+Route::get('profile', [UserController::class, 'profile'])->name('perfil.profile');
