@@ -27,7 +27,7 @@
       <td> {{$solicitudOrg->oportunidad->fechaInicio}} </td>
       <td>
         <a href="{{route('solicitudes.show',$solicitudOrg->Id_OportunidadValidador)}}" class="btn btn-primary"> <i class="fas fa-eye">       </i></a>
-        <a href="{{route('solicitudes.create',$solicitudOrg->Id_OportunidadValidador)}}" class="btn btn-primary"> <i class="fas fa-paper-plane"></i>       </i></a>
+        <a href="{{--route('solicitudes.create',$solicitudOrg->Id_OportunidadValidador)--}}" class="btn btn-primary"> <i class="fas fa-paper-plane"></i>       </i></a>
     </tr>
     @endforeach
   </tbody>
